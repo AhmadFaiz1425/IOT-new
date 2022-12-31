@@ -1,0 +1,42 @@
+body {
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    background-color: white;
+    border-top: solid;
+    border-top-width: 10px;
+    border-top-color: orangered;
+    width: 400px;
+    margin: 15px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.156);
+}
+
+.card > div:not(#footer) {
+    vertical-align: middle;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.card > hr {
+    width: 70%;
+}
+
+.card > #footer {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
